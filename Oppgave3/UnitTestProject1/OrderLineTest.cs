@@ -29,5 +29,59 @@ namespace UnitTestProject1
 
             Assert.AreNotEqual(expectedId, orderLine.Id);
         }
+
+        [TestMethod]
+        public void Test_AreEqual_Quantity()
+        {
+            int expectedQuantity = 15;
+
+            orderLine.Quantity = 15;
+
+            Assert.AreEqual(expectedQuantity, orderLine.Quantity);
+        }
+
+        [TestMethod]
+        public void Test_AreNotEqual_Quantity()
+        {
+            int expectedQuantity = 25;
+
+            orderLine.Quantity = 15;
+
+            Assert.AreNotEqual(expectedQuantity, orderLine.Quantity);
+        }
+
+        [TestMethod]
+        public void Test_AreEqual_Price()
+        {
+            int expectedPrice = 20;
+
+            int actualPrice = (int) orderLine.Price;
+
+            Assert.AreEqual(expectedPrice, actualPrice);
+        }
+
+        [TestMethod]
+        public void Test_AreNotEqual_Price()
+        {
+            int expectedPrice = 25;
+
+            int actualPrice = (int)orderLine.Price;
+
+            Assert.AreNotEqual(expectedPrice, actualPrice);
+        }
+
+        /*
+        [TestMethod]
+        public void Test_AreEqual_Order()
+        {
+
+        }
+
+        [TestMethod]
+        public void Test_AreNotEqual_Order()
+        {
+
+        }
+        */
     }
 }

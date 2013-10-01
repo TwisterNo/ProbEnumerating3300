@@ -21,7 +21,6 @@ namespace MiniStore.BusinessCore
 
         public int Quantity { get; set; }
 
-
         public decimal Price { get; private set; }
 
         public IOrder Order { get; set; }
