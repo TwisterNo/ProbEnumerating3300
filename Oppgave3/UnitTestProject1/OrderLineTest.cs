@@ -30,6 +30,21 @@ namespace UnitTestProject1
             Assert.AreNotEqual(expectedId, orderLine.Id);
         }
 
+        /*
+        [TestMethod]
+        public void Test_AreEqual_Product()
+        {
+
+        }
+
+        [TestMethod]
+        public void Test_AreNotEqual_Product()
+        {
+
+        }
+         
+        */
+
         [TestMethod]
         public void Test_AreEqual_Quantity()
         {
