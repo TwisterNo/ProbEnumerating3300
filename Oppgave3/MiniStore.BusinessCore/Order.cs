@@ -15,9 +15,11 @@ namespace MiniStore.BusinessCore
 {
     public class Order : IOrder
     {
-        public Order(decimal discount, decimal totalSum, IEnumerable<IOrderLine> orderLines)
+        List<IOrderLine> lines = new List<IOrderLine>();
+
+        public Order(decimal discount, decimal totalSum)
         {
-            OrderLines = orderLines;
+           
             TotalSum = totalSum;
             Discount = discount;
         }
@@ -30,8 +32,9 @@ namespace MiniStore.BusinessCore
         public decimal Discount { get; private set; }
         public void AddOrderLine(IOrderLine line)
         {
-            
-           
+            lines.Add(line);
+            OrderLines = lines;
+
         }
     }
 }

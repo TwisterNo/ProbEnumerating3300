@@ -10,10 +10,10 @@ namespace UnitTestProject1
     public class OrderTest
     {
 
+
         
-        private static IEnumerable<IOrderLine> OrderLine;
         private static IEnumerable<Order> EnumOrder;
-        Order order = new Order(10, 200, OrderLine);
+        private Order order = new Order(10, 200);
 
 
         [TestMethod]
@@ -60,11 +60,19 @@ namespace UnitTestProject1
         }
 
         /*
-         *  Test for OrderLines
         [TestMethod]
         public void Test_AreEqual_OrderLines()
         {
-            
+            OrderLine ordLine = new OrderLine(20);
+            List<OrderLine> orderList = new List<OrderLine>();
+            IEnumerable<IOrderLine> expectedOrderLine;
+
+            expectedOrderLine.Add(20);
+            orderList.Add(ordLine);
+           
+
+            Assert.AreEqual(null, order.OrderLines.GetEnumerator());
+
         }
 
         [TestMethod]
@@ -72,8 +80,8 @@ namespace UnitTestProject1
         {
 
         }
+        
         */
-
         [TestMethod]
         public void Test_AreEqual_TotalSum()
         {
