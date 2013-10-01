@@ -59,6 +59,21 @@ namespace UnitTestProject1
             Assert.AreNotEqual(expected, order.Customer);
         }
 
+        /*
+         *  Test for OrderLines
+        [TestMethod]
+        public void Test_AreEqual_OrderLines()
+        {
+            
+        }
+
+        [TestMethod]
+        public void Test_AreNotEqual_OrderLines()
+        {
+
+        }
+        */
+
         [TestMethod]
         public void Test_AreEqual_TotalSum()
         {
@@ -90,6 +105,21 @@ namespace UnitTestProject1
 
             Assert.AreNotEqual(expectedDiscount, order.Discount);
         }
+
+        /*
+         *  Test for AddOrderLine
+        [TestMethod]
+        public void Test_AreEqual_AddOrderLine()
+        {
+            
+        }
+
+        [TestMethod]
+        public void Test_AreNotEqual_AddOrderLine()
+        {
+
+        }
+        */
 
 
     }
