@@ -1,0 +1,11 @@
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\UnitTestProject1\obj\Debug\MiniStore.BusinessCore.Tests.csprojResolveAssemblyReference.cache
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\UnitTestProject1\bin\Debug\MiniStore.BusinessCore.dll
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\UnitTestProject1\bin\Debug\MiniStore.Interfaces.dll
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\UnitTestProject1\bin\Debug\MiniStore.Database.dll
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\UnitTestProject1\bin\Debug\MiniStore.BusinessCore.pdb
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\UnitTestProject1\bin\Debug\MiniStore.Interfaces.pdb
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\UnitTestProject1\bin\Debug\MiniStore.Database.pdb
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

@@ -11,7 +11,7 @@ using MiniStore.Interfaces;
 
 namespace MiniStore.BusinessCore
 {
-    class Customer : ICustomer
+    public class Customer : ICustomer
     {
         public Customer(string id, string name, string email, IEnumerable<IOrder> orders)
         {

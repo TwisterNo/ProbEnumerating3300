@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniStore.BusinessCore", "M
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Meta", "Meta", "{50C2AEEB-1B4A-457D-AABE-36B0F89D89D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniStore.BusinessCore.Tests", "UnitTestProject1\MiniStore.BusinessCore.Tests.csproj", "{ED691FFA-7DB5-4F43-8A66-6CFD748B98D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{0F017710-AE29-455F-B791-175BE2A37ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F017710-AE29-455F-B791-175BE2A37ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F017710-AE29-455F-B791-175BE2A37ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED691FFA-7DB5-4F43-8A66-6CFD748B98D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED691FFA-7DB5-4F43-8A66-6CFD748B98D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED691FFA-7DB5-4F43-8A66-6CFD748B98D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED691FFA-7DB5-4F43-8A66-6CFD748B98D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

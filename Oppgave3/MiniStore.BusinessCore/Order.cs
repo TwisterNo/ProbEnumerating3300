@@ -13,7 +13,7 @@ using MiniStore.Interfaces;
 
 namespace MiniStore.BusinessCore
 {
-    class Order : IOrder
+    public class Order : IOrder
     {
         public Order(decimal discount, decimal totalSum, IEnumerable<IOrderLine> orderLines)
         {
@@ -30,7 +30,7 @@ namespace MiniStore.BusinessCore
         public decimal Discount { get; private set; }
         public void AddOrderLine(IOrderLine line)
         {
- 
+            
            
         }
     }

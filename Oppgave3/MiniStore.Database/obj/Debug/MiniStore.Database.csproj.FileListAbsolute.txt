@@ -1,0 +1,5 @@
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Database\bin\Debug\MiniStore.Database.dll
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Database\bin\Debug\MiniStore.Database.pdb
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Database\obj\Debug\MiniStore.Database.csprojResolveAssemblyReference.cache
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Database\obj\Debug\MiniStore.Database.dll
+C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Database\obj\Debug\MiniStore.Database.pdb
