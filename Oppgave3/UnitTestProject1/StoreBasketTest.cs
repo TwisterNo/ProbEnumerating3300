@@ -53,7 +53,53 @@ namespace UnitTestProject1
         [TestMethod]
         public void Test_AreEqual_TotalSum()
         {
-             
+            //Arrange
+            var basket = new StoreBasket(30.00m);
+            
+            //Act 
+            var actual = basket.TotalSum;
+            var expected = 30.00m;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Test_AreNotEqual_TotalSum()
+        {
+            //Arrange
+            var basket = new StoreBasket(30.00m);
+
+            //Act 
+            var actual = basket.TotalSum;
+            var expected = 3.00m;
+
+            //Assert
+            Assert.AreNotEqual(expected, actual);
+        }
+
+        //[TestMethod]
+        //public void Test_AreEqual_AddItemToBasket()
+        //{
+            
+        //}
+
+        //[TestMethod]
+        //public void Test_AreNotEqual_AddItemToBasket()
+        //{
+
+        //}
+
+        //[TestMethod]
+        //public void Test_AreEqual_CreateOrder()
+        //{
+
+        //}
+
+        //[TestMethod]
+        //public void Test_AreNotEqual_CreateOrder()
+        //{
+
+        //}
     }
 }

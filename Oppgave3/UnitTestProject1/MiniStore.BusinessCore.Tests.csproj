@@ -62,6 +62,10 @@
       <Project>{0f017710-ae29-455f-b791-175be2a37ece}</Project>
       <Name>MiniStore.BusinessCore</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MiniStore.Database\MiniStore.Database.csproj">
+      <Project>{47186204-d948-4842-8ecc-2c401525621b}</Project>
+      <Name>MiniStore.Database</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MiniStore.Interfaces\MiniStore.Interfaces.csproj">
       <Project>{befec1bb-dc62-4670-b84c-309c61a98083}</Project>
       <Name>MiniStore.Interfaces</Name>
