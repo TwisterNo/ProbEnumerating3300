@@ -8,7 +8,7 @@ using MiniStore.Interfaces;
 
 namespace MiniStore.BusinessCore
 {
-    class StoreBasket : IShopppingBasket
+    public class StoreBasket : IShopppingBasket
     {
         public StoreBasket(decimal totalSum)
         {

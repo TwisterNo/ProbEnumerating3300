@@ -55,6 +55,7 @@
     <Compile Include="OrderTest.cs" />
     <Compile Include="OrderLineTest.cs" />
     <Compile Include="ShoppingBasketItemTest.cs" />
+    <Compile Include="StoreBasketTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MiniStore.BusinessCore\MiniStore.BusinessCore.csproj">
