@@ -8,7 +8,7 @@ using MiniStore.Interfaces;
 
 namespace MiniStore.BusinessCore
 {
-    class ShoppingBasketItem : IShoppingBasketItem
+    public class ShoppingBasketItem : IShoppingBasketItem
     {
         public int Id { get; set; }
         public Product Product { get; set; }
