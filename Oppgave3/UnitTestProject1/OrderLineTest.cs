@@ -44,12 +44,14 @@ namespace UnitTestProject1
         {
 
             IOrder order = new Order(20.00m , 100);
+            var orderLine = new OrderLine(20.00m);
 
             //Act
-            var actual = order;
-            var expected = new Order(200.00m, 100);
+            var actual = order.Discount;
+            var expected = 20.00m;
 
-            Assert.AreNotEqual(expected, actual);
+            //Assert
+            Assert.AreEqual(expected, actual);
 
 
         }
