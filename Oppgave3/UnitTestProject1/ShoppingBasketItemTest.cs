@@ -1,5 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MiniStore.BusinessCore;
+using MiniStore.Interfaces;
 
 namespace UnitTestProject1
 {
@@ -9,6 +11,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void Test_AreEqual_Id()
         {
+            
         }
     }
 }

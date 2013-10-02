@@ -10,55 +10,110 @@ namespace UnitTestProject1
     public class CustomerTest
     {
         private static IEnumerable<IOrder> Order;  
-        Customer customer = new Customer("Id", "Name", "Email", Order);
+        //Customer customer = new Customer("Id", "Name", "Email", Order);
 
         [TestMethod]
         public void Test_AreEqual_Id()
         {
-            String Id = "Id";
-            Assert.AreEqual(Id, customer.Id);
+            //Arrange
+            var customer = new Customer("Id", "", "", Order);
+
+            //Act
+            var actual = customer.Id;
+            var expected = "Id";
+
+            //Assert
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void Test_AreNotEqual_Id()
         {
-            String Id = "Fail Id";
-            Assert.AreNotEqual(Id, customer.Id);
+            //Arrange 
+            var customer = new Customer("Id", "", "", Order);
+
+            //Act
+            var actual = customer.Id;
+            var expected = "Wrong Id";
+
+            //Assert
+            Assert.AreNotEqual(expected, actual);
         }
 
         [TestMethod]
         public void Test_AreEqual_Name()
         {
-            String Name = "Name";
-            Assert.AreEqual(Name, customer.Name);
+            //Arrange 
+            var customer = new Customer("", "Name", "", Order);
+
+            //Act
+            var actual = customer.Name;
+            var expected = "Name";
+
+            //Assert
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void Test_AreNotEqual_Name()
         {
-            String Name = "Fail name";
-            Assert.AreNotEqual(Name, customer.Name);
+            //Arrange 
+            var customer = new Customer("", "Name", "", Order);
+
+            //Act
+            var actual = customer.Name;
+            var expected = "Wrong Name";
+
+            //Assert
+            Assert.AreNotEqual(expected, actual);
         }
 
         [TestMethod]
         public void Test_AreEqual_Email()
         {
-            String Email = "Email";
-            Assert.AreEqual(Email, customer.Email);
+            //Arrange 
+            var customer = new Customer("", "", "Email", Order);
+
+            //Act
+            var actual = customer.Email;
+            var expected = "Email";
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+
         }
 
         [TestMethod]
         public void Test_AreNotEqual_Email()
         {
-            String Email = "Fail email";
-            Assert.AreNotEqual(Email, customer.Email);
+            //Arrange 
+            var customer = new Customer("", "", "Email", Order);
+
+            //Act
+            var actual = customer.Email;
+            var expected = "Wrong Email";
+
+            //Assert
+            Assert.AreNotEqual(expected, actual);
+
         }
 
+
+        /*
         [TestMethod]
         public void Test_AreEqual_Orders()
         {
-            IEnumerable<IOrder> Order = null;
-            Assert.AreEqual(Order, customer.Orders);
+            //Arrange 
+            var Customer = new Customer("", "", "", Order);
+
+            //Act
+            var actual = customer.Orders;
+            object expected = null;
+
+            //Assert
+            Assert.AreNotEqual(expected, actual);
+
+
         }
 
         [TestMethod]
@@ -68,6 +123,6 @@ namespace UnitTestProject1
             Assert.AreNotEqual(Order, customer.Orders);
         }
 
-        
+        */
     }
 }

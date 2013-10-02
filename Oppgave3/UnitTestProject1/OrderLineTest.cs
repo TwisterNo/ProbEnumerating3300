@@ -8,26 +8,34 @@ namespace UnitTestProject1
     [TestClass]
     public class OrderLineTest
     {
-        OrderLine orderLine = new OrderLine(20);
+        //OrderLine orderLine = new OrderLine(20);
 
         [TestMethod]
         public void Test_AreEqual_Id()
         {
-            int expectedId = 10;
-
+            //Arrange
+            var orderLine = new OrderLine(20);
             orderLine.Id = 10;
 
-            Assert.AreEqual(expectedId, orderLine.Id);
+            //Act
+            var actual = orderLine.Id;
+            var expected = 10;
+
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void Test_AreNotEqual_Id()
         {
-            int expectedId = 20;
-
+            //Arrange
+            var orderLine = new OrderLine(20);
             orderLine.Id = 10;
 
-            Assert.AreNotEqual(expectedId, orderLine.Id);
+            //Act
+            var actual = orderLine.Id;
+            var expected = 20;
+
+            Assert.AreNotEqual(expected, actual);
         }
 
         /*
@@ -48,6 +56,9 @@ namespace UnitTestProject1
         [TestMethod]
         public void Test_AreEqual_Quantity()
         {
+            //Arrange
+
+
             int expectedQuantity = 15;
 
             orderLine.Quantity = 15;
@@ -85,18 +96,23 @@ namespace UnitTestProject1
             Assert.AreNotEqual(expectedPrice, actualPrice);
         }
 
-        /*
-        [TestMethod]
-        public void Test_AreEqual_Order()
-        {
+        
+        //[TestMethod]
+        //public void Test_AreEqual_Order()
+        //{
+        //    var orderLine = new OrderLine(10.00m);
+        //    var iOrder = orderLine as IOrder;
 
-        }
+        //    iOrder.
 
-        [TestMethod]
-        public void Test_AreNotEqual_Order()
-        {
 
-        }
-        */
+        //}
+
+        //[TestMethod]
+        //public void Test_AreNotEqual_Order()
+        //{
+
+        //}
+        
     }
 }

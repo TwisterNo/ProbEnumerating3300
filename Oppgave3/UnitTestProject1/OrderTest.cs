@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MiniStore.Interfaces;
@@ -10,54 +11,61 @@ namespace UnitTestProject1
     public class OrderTest
     {
 
-
-        
         private static IEnumerable<Order> EnumOrder;
-        private Order order = new Order(10, 200);
 
 
         [TestMethod]
         public void Test_AreEqual_Id()
         {
-            int id = 0;
-
+            //Arrange
+            var order = new Order(10, 200);
             order.Id = 0;
-
-            Assert.AreEqual(id, order.Id);
+            
+            //Act
+            var actual = order.Id;
+            var expected = 0;
+            
+            //Assert
+            Assert.AreEqual(expected, actual);
 
         }
 
         [TestMethod]
         public void Test_AreNotEqual_Id()
         {
-            int id = 1;
+            //Arrange
+            var order = new Order(10, 200);
+            order.Id = 1;
 
-            order.Id = 0;
+            //Act
+            var actual = order.Id;
+            var expected = 0;
 
-            Assert.AreNotEqual(id, order.Id);
+            //Assert
+            Assert.AreNotEqual(expected, actual);
 
         }
 
-        [TestMethod]
-        public void Test_AreEqual_Customer()
-        {
-            var customer = new Customer("Id", "Name", "Email", EnumOrder);
+        //[TestMethod]
+        //public void Test_AreEqual_Customer()
+        //{
+        //    var customer = new Customer("Id", "Name", "Email", EnumOrder);
 
-            order.Customer = customer;
+        //    order.Customer = customer;
 
-            Assert.AreEqual(customer, order.Customer);
-        }
+        //    Assert.AreEqual(customer, order.Customer);
+        //}
 
-        [TestMethod]
-        public void Test_AreNotEqual_Customer()
-        {
-            var expected = new Customer("Id2", "Name", "Email", EnumOrder);
-            var customer = new Customer("Id", "Name", "Email", EnumOrder);
+        //[TestMethod]
+        //public void Test_AreNotEqual_Customer()
+        //{
+        //    var expected = new Customer("Id2", "Name", "Email", EnumOrder);
+        //    var customer = new Customer("Id", "Name", "Email", EnumOrder);
             
-            order.Customer = customer;
+        //    order.Customer = customer;
 
-            Assert.AreNotEqual(expected, order.Customer);
-        }
+        //    Assert.AreNotEqual(expected, order.Customer);
+        //}
 
         /*
         [TestMethod]
@@ -85,33 +93,55 @@ namespace UnitTestProject1
         [TestMethod]
         public void Test_AreEqual_TotalSum()
         {
-            int expectedTotalSum = 200;
+            //Arrange
+            var order = new Order(4.00m, 200.00m);
 
-            Assert.AreEqual(expectedTotalSum, order.TotalSum);
+            //Act
+            var actual = order.TotalSum;
+            var expected = 200.00m;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void Test_AreNotEqual_TotalSum()
         {
-            int expectedTotalSum = 300;
+            var order = new Order(4.00m, 200.00m);
 
-            Assert.AreNotEqual(expectedTotalSum, order.TotalSum);
+            //Act
+            var actual = order.TotalSum;
+            var expected = 300.00m;
+
+            Assert.AreNotEqual(expected, actual);
         }
 
         [TestMethod]
         public void Test_AreEqual_Discount()
         {
-            int expectedDiscount = 10;
+            //Arrange
+            var order = new Order(4.00m, 200.00m);
 
-            Assert.AreEqual(expectedDiscount, order.Discount);
+            //Act
+            var actual = order.Discount;
+            var expected = 4.00m;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void Test_AreNotEqual_Discount()
         {
-            int expectedDiscount = 30;
+            //Arrange
+            var order = new Order(4.00m, 200.00m);
 
-            Assert.AreNotEqual(expectedDiscount, order.Discount);
+            //Act
+            var actual = order.Discount;
+            var expected = 5.00m;
+
+            //Assert
+            Assert.AreNotEqual(expected, actual);
         }
 
         /*

@@ -3,7 +3,7 @@ using MiniStore.Database;
 
 namespace MiniStore.Interfaces
 {
-    public interface IOrderLine
+    public interface IOrderLine:IOrder
     {
         int Id { get; set; }
 
