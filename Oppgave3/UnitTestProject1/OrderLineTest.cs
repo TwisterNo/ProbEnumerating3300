@@ -41,7 +41,7 @@ namespace UnitTestProject1
 
 
         [TestMethod]
-        public void test_areequal_product()
+        public void Test_AreEqual_Product()
         {
             var product = new MiniStore.Database.Product();
 
@@ -59,7 +59,7 @@ namespace UnitTestProject1
 
 
 
-            Assert.IsTrue(product.GetType() != typeof(Product));
+            Assert.IsFalse(product.GetType() != typeof(Product));
 
         }
          
