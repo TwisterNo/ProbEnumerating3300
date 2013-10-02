@@ -14,16 +14,7 @@ namespace MiniStore.BusinessCore
            Price = price;
        }
 
-       public int Id{ get; set;}
-       public ICustomer Customer { get; set; }
-       public IEnumerable<IOrderLine> OrderLines { get; private set; }
-       public decimal TotalSum { get; private set; }
-       public decimal Discount { get; private set; }
-       public void AddOrderLine(IOrderLine line)
-       {
-           throw new NotImplementedException();
-       }
-
+       public int Id { get; set; }
        public Database.Product Product { get; set; }
         
 

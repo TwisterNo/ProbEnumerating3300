@@ -14,7 +14,7 @@ namespace UnitTestProject1
         public void Test_AreEqual_Id()
         {
             //Arrange
-            var orderLine = new OrderLine(20);
+            var orderLine = new OrderLine(20.00m);
             orderLine.Id = 10;
 
             //Act
@@ -28,7 +28,7 @@ namespace UnitTestProject1
         public void Test_AreNotEqual_Id()
         {
             //Arrange
-            var orderLine = new OrderLine(20);
+            var orderLine = new OrderLine(20.00m);
             orderLine.Id = 10;
 
             //Act
@@ -57,43 +57,56 @@ namespace UnitTestProject1
         public void Test_AreEqual_Quantity()
         {
             //Arrange
-
-
-            int expectedQuantity = 15;
-
+            var orderLine = new OrderLine(20.00m);
             orderLine.Quantity = 15;
 
-            Assert.AreEqual(expectedQuantity, orderLine.Quantity);
+            //Act
+            var actual = 15;
+            var expected = 15;
+
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void Test_AreNotEqual_Quantity()
         {
-            int expectedQuantity = 25;
-
+            //Arrange
+            var orderLine = new OrderLine(20.00m);
             orderLine.Quantity = 15;
 
-            Assert.AreNotEqual(expectedQuantity, orderLine.Quantity);
+            //Act
+            var actual = 15;
+            var expected = 25;
+
+            Assert.AreNotEqual(expected, actual);
+
         }
 
         [TestMethod]
         public void Test_AreEqual_Price()
         {
-            int expectedPrice = 20;
+            //Arrange
+            var orderLine = new OrderLine(20.00m);
 
-            int actualPrice = (int) orderLine.Price;
+            //Act
+            var expected = 20.00m;
+            var actual = orderLine.Price;
 
-            Assert.AreEqual(expectedPrice, actualPrice);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void Test_AreNotEqual_Price()
         {
-            int expectedPrice = 25;
+            //Arrange
+            var orderLine = new OrderLine(20.00m);
 
-            int actualPrice = (int)orderLine.Price;
+            //Act
+            var expected = 25.00m;
+            var actual = orderLine.Price;
 
-            Assert.AreNotEqual(expectedPrice, actualPrice);
+            Assert.AreNotEqual(expected, actual);
+           
         }
 
         
