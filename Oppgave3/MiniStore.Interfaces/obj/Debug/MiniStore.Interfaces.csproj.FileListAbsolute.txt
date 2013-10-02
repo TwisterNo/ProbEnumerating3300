@@ -5,3 +5,10 @@ C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Interfaces\bin\D
 C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Interfaces\obj\Debug\MiniStore.Interfaces.csprojResolveAssemblyReference.cache
 C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Interfaces\obj\Debug\MiniStore.Interfaces.dll
 C:\Users\ProBook\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Interfaces\obj\Debug\MiniStore.Interfaces.pdb
+C:\Users\PålBlomseth\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Interfaces\bin\Debug\MiniStore.Interfaces.dll
+C:\Users\PålBlomseth\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Interfaces\bin\Debug\MiniStore.Interfaces.pdb
+C:\Users\PålBlomseth\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Interfaces\bin\Debug\MiniStore.Database.dll
+C:\Users\PålBlomseth\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Interfaces\bin\Debug\MiniStore.Database.pdb
+C:\Users\PålBlomseth\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Interfaces\obj\Debug\MiniStore.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\PålBlomseth\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Interfaces\obj\Debug\MiniStore.Interfaces.dll
+C:\Users\PålBlomseth\Desktop\ProbEnumerating3300\Oppgave3\MiniStore.Interfaces\obj\Debug\MiniStore.Interfaces.pdb

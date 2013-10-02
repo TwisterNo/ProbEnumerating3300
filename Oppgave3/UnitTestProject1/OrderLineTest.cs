@@ -38,10 +38,19 @@ namespace UnitTestProject1
             Assert.AreNotEqual(expected, actual);
         }
 
-        /*
+        
         [TestMethod]
         public void Test_AreEqual_Product()
         {
+
+            IOrder order = new Order(20.00m , 100);
+
+            //Act
+            var actual = order;
+            var expected = new Order(200.00m, 100);
+
+            Assert.AreNotEqual(expected, actual);
+
 
         }
 
@@ -51,7 +60,7 @@ namespace UnitTestProject1
 
         }
          
-        */
+        
 
         [TestMethod]
         public void Test_AreEqual_Quantity()
