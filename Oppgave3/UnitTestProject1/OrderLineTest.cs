@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MiniStore.BusinessCore;
 using MiniStore.Interfaces;
+using MiniStore.Database;
 
 namespace UnitTestProject1
 {
@@ -26,6 +27,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void Test_AreNotEqual_Id()
         {
+
             //Arrange
             var orderLine = new OrderLine(20.00m);
             orderLine.Id = 10;
@@ -37,19 +39,29 @@ namespace UnitTestProject1
             Assert.AreNotEqual(expected, actual);
         }
 
-        
-        //[TestMethod]
-        //public void Test_AreEqual_Product()
-        //{
-           
 
-        //}
+        [TestMethod]
+        public void test_areequal_product()
+        {
+            var product = new MiniStore.Database.Product();
 
-        //[TestMethod]
-        //public void Test_AreNotEqual_Product()
-        //{
-           
-        //}
+
+
+            Assert.IsTrue(product.GetType() == typeof(Product));
+
+
+        }
+
+        [TestMethod]
+        public void Test_AreNotEqual_Product()
+        {
+            var product = new MiniStore.Database.Product();
+
+
+
+            Assert.IsTrue(product.GetType() != typeof(Product));
+
+        }
          
         
 
