@@ -8,7 +8,6 @@ namespace UnitTestProject1
     [TestClass]
     public class OrderLineTest
     {
-        //OrderLine orderLine = new OrderLine(20);
 
         [TestMethod]
         public void Test_AreEqual_Id()
@@ -39,42 +38,18 @@ namespace UnitTestProject1
         }
 
         
-        [TestMethod]
-        public void Test_AreEqual_Product()
-        {
-            //Arrange
-            IOrder order = new Order(20.00m , 100);
+        //[TestMethod]
+        //public void Test_AreEqual_Product()
+        //{
+           
 
-            //Act
-            var actual = order.Discount;
-            var actual2 = order.TotalSum;
-            var expected = 20.00m;
-            var expected2 = 100;
+        //}
 
-
-            //Assert
-            Assert.AreEqual(expected, actual, "Hvis denne feiler, er det feil i Discount");
-            Assert.AreEqual(expected2, actual2, "Hvis denne feiler, er det feil i TotalSum");
-
-        }
-
-        [TestMethod]
-        public void Test_AreNotEqual_Product()
-        {
-            //Arrange
-            IOrder order = new Order(20.00m, 100);
-
-            //Act
-            var actual = order.Discount;
-            var actual2 = order.TotalSum;
-            var expected = 25.00m;
-            var expected2 = 150;
-
-
-            //Assert
-            Assert.AreNotEqual(expected, actual, "Hvis denne feiler, er det feil i Discount");
-            Assert.AreNotEqual(expected2, actual2, "Hvis denne feiler, er det feil i TotalSum");
-        }
+        //[TestMethod]
+        //public void Test_AreNotEqual_Product()
+        //{
+           
+        //}
          
         
 
@@ -134,23 +109,44 @@ namespace UnitTestProject1
            
         }
 
-        
-        //[TestMethod]
-        //public void Test_AreEqual_Order()
-        //{
-        //    var orderLine = new OrderLine(10.00m);
-        //    var iOrder = orderLine as IOrder;
 
-        //    iOrder.
+        [TestMethod]
+        public void Test_AreEqual_Order()
+        {
+            //Arrange
+            IOrder order = new Order(20.00m, 100);
+
+            //Act
+            var actual = order.Discount;
+            var actual2 = order.TotalSum;
+            var expected = 20.00m;
+            var expected2 = 100;
 
 
-        //}
+            //Assert
+            Assert.AreEqual(expected, actual, "Hvis denne feiler, er det feil i Discount");
+            Assert.AreEqual(expected2, actual2, "Hvis denne feiler, er det feil i TotalSum");
 
-        //[TestMethod]
-        //public void Test_AreNotEqual_Order()
-        //{
 
-        //}
+        }
+
+        [TestMethod]
+        public void Test_AreNotEqual_Order()
+        {
+            //Arrange
+            IOrder order = new Order(20.00m, 100);
+
+            //Act
+            var actual = order.Discount;
+            var actual2 = order.TotalSum;
+            var expected = 25.00m;
+            var expected2 = 150;
+
+
+            //Assert
+            Assert.AreNotEqual(expected, actual, "Hvis denne feiler, er det feil i Discount");
+            Assert.AreNotEqual(expected2, actual2, "Hvis denne feiler, er det feil i TotalSum");
+        }
         
     }
 }
