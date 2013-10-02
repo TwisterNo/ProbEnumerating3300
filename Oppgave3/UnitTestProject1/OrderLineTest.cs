@@ -42,24 +42,38 @@ namespace UnitTestProject1
         [TestMethod]
         public void Test_AreEqual_Product()
         {
-
+            //Arrange
             IOrder order = new Order(20.00m , 100);
-            var orderLine = new OrderLine(20.00m);
 
             //Act
             var actual = order.Discount;
+            var actual2 = order.TotalSum;
             var expected = 20.00m;
+            var expected2 = 100;
+
 
             //Assert
-            Assert.AreEqual(expected, actual);
-
+            Assert.AreEqual(expected, actual, "Hvis denne feiler, er det feil i Discount");
+            Assert.AreEqual(expected2, actual2, "Hvis denne feiler, er det feil i TotalSum");
 
         }
 
         [TestMethod]
         public void Test_AreNotEqual_Product()
         {
+            //Arrange
+            IOrder order = new Order(20.00m, 100);
 
+            //Act
+            var actual = order.Discount;
+            var actual2 = order.TotalSum;
+            var expected = 25.00m;
+            var expected2 = 150;
+
+
+            //Assert
+            Assert.AreNotEqual(expected, actual, "Hvis denne feiler, er det feil i Discount");
+            Assert.AreNotEqual(expected2, actual2, "Hvis denne feiler, er det feil i TotalSum");
         }
          
         
