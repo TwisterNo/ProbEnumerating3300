@@ -32,8 +32,11 @@ namespace MiniStore.BusinessCore
         public decimal Discount { get; private set; }
         public void AddOrderLine(IOrderLine line)
         {
+          List<IOrderLine> lines = new List<IOrderLine>();
             lines.Add(line);
-            OrderLines = lines;
+
+            
+
 
         }
     }
