@@ -1,6 +1,4 @@
-﻿using System;
-using System.CodeDom;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MiniStore.Interfaces;
 using MiniStore.BusinessCore;
@@ -55,7 +53,7 @@ namespace UnitTestProject1
             var expected = customer;
 
             //Assert
-            Assert.AreEqual(customer, order.Customer);
+            Assert.AreEqual(expected, order.Customer);
         }
 
         [TestMethod]

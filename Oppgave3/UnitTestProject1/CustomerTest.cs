@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MiniStore.BusinessCore;
-using MiniStore.Interfaces;
 
 namespace UnitTestProject1
 {
@@ -101,16 +98,13 @@ namespace UnitTestProject1
         public void Test_AreEqual_Orders()
         {
             //Arrange 
-            var Customer = new Customer("", "", "");
+            var customer = new Customer("", "", "");
 
             //Act
-            var actual = Customer.Orders;
-            object expected = null;
+            var actual = customer.Orders;
 
             //Assert
-            Assert.AreEqual(expected, actual);
+            Assert.IsNull(actual);
         }
-
-       
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MiniStore.BusinessCore;
 using MiniStore.Interfaces;
 using MiniStore.Database;
@@ -44,7 +43,7 @@ namespace UnitTestProject1
         public void Test_AreEqual_Product()
         {
             // Arrange
-            var product = new MiniStore.Database.Product();
+            var product = new Product();
 
             //Assert
             Assert.IsTrue(product.GetType() == typeof(Product));
@@ -56,7 +55,7 @@ namespace UnitTestProject1
         public void Test_AreNotEqual_Product()
         {
             //Arange
-            var product = new MiniStore.Database.Product();
+            var product = new Product();
 
 
             //Assert

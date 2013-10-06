@@ -1,7 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MiniStore.BusinessCore;
-using MiniStore.Interfaces;
 
 namespace UnitTestProject1
 {
@@ -42,11 +40,11 @@ namespace UnitTestProject1
         public void Test_AreEqual_Product()
         {
             //Arange
-            var ShopBasket = new ShoppingBasketItem();
-            ShopBasket.Product = null;
+            var shopBasket = new ShoppingBasketItem();
+            shopBasket.Product = null;
 
             //Assert
-            Assert.IsNull(ShopBasket.Product);
+            Assert.IsNull(shopBasket.Product);
   
 
         }
