@@ -9,14 +9,12 @@ namespace UnitTestProject1
     [TestClass]
     public class CustomerTest
     {
-        private static IEnumerable<IOrder> Order;  
-        //Customer customer = new Customer("Id", "Name", "Email", Order);
 
         [TestMethod]
         public void Test_AreEqual_Id()
         {
             //Arrange
-            var customer = new Customer("Id", "", "", Order);
+            var customer = new Customer("Id", "", "");
 
             //Act
             var actual = customer.Id;
@@ -30,7 +28,7 @@ namespace UnitTestProject1
         public void Test_AreNotEqual_Id()
         {
             //Arrange 
-            var customer = new Customer("Id", "", "", Order);
+            var customer = new Customer("Id", "", "");
 
             //Act
             var actual = customer.Id;
@@ -44,7 +42,7 @@ namespace UnitTestProject1
         public void Test_AreEqual_Name()
         {
             //Arrange 
-            var customer = new Customer("", "Name", "", Order);
+            var customer = new Customer("", "Name", "");
 
             //Act
             var actual = customer.Name;
@@ -58,7 +56,7 @@ namespace UnitTestProject1
         public void Test_AreNotEqual_Name()
         {
             //Arrange 
-            var customer = new Customer("", "Name", "", Order);
+            var customer = new Customer("", "Name", "");
 
             //Act
             var actual = customer.Name;
@@ -72,7 +70,7 @@ namespace UnitTestProject1
         public void Test_AreEqual_Email()
         {
             //Arrange 
-            var customer = new Customer("", "", "Email", Order);
+            var customer = new Customer("", "", "Email");
 
             //Act
             var actual = customer.Email;
@@ -87,7 +85,7 @@ namespace UnitTestProject1
         public void Test_AreNotEqual_Email()
         {
             //Arrange 
-            var customer = new Customer("", "", "Email", Order);
+            var customer = new Customer("", "", "Email");
 
             //Act
             var actual = customer.Email;
@@ -99,30 +97,20 @@ namespace UnitTestProject1
         }
 
 
-        /*
         [TestMethod]
         public void Test_AreEqual_Orders()
         {
             //Arrange 
-            var Customer = new Customer("", "", "", Order);
+            var Customer = new Customer("", "", "");
 
             //Act
-            var actual = customer.Orders;
+            var actual = Customer.Orders;
             object expected = null;
 
             //Assert
-            Assert.AreNotEqual(expected, actual);
-
-
+            Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
-        public void Test_AreNotEqual_Orders()
-        {
-            IEnumerable<IOrder> Order = null;
-            Assert.AreNotEqual(Order, customer.Orders);
-        }
-
-        */
+       
     }
 }

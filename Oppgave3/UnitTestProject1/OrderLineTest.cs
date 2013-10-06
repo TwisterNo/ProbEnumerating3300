@@ -43,10 +43,10 @@ namespace UnitTestProject1
         [TestMethod]
         public void Test_AreEqual_Product()
         {
+            // Arrange
             var product = new MiniStore.Database.Product();
 
-
-
+            //Assert
             Assert.IsTrue(product.GetType() == typeof(Product));
 
 
@@ -55,10 +55,11 @@ namespace UnitTestProject1
         [TestMethod]
         public void Test_AreNotEqual_Product()
         {
+            //Arange
             var product = new MiniStore.Database.Product();
 
 
-
+            //Assert
             Assert.IsFalse(product.GetType() != typeof(Product));
 
         }
@@ -76,6 +77,7 @@ namespace UnitTestProject1
             var actual = 15;
             var expected = 15;
 
+            //Assert
             Assert.AreEqual(expected, actual);
         }
 
@@ -117,6 +119,7 @@ namespace UnitTestProject1
             var expected = 25.00m;
             var actual = orderLine.Price;
 
+            //Assert
             Assert.AreNotEqual(expected, actual);
            
         }

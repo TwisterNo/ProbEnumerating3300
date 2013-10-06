@@ -1,8 +1,4 @@
-﻿/**
- * @TDA
- * */
-
-
+﻿
 
 using System;
 using System.Collections.Generic;
@@ -15,7 +11,6 @@ namespace MiniStore.BusinessCore
 {
     public class Order : IOrder
     {
-        List<IOrderLine> lines = new List<IOrderLine>();
 
         public Order(decimal discount, decimal totalSum)
         {
@@ -32,12 +27,7 @@ namespace MiniStore.BusinessCore
         public decimal Discount { get; private set; }
         public void AddOrderLine(IOrderLine line)
         {
-          List<IOrderLine> lines = new List<IOrderLine>();
-            lines.Add(line);
-
-            
-
-
+            OrderLines = line as IEnumerable<IOrderLine>;
         }
     }
 }

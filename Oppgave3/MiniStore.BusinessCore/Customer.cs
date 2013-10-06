@@ -11,9 +11,8 @@ namespace MiniStore.BusinessCore
 {
     public class Customer : ICustomer
     {
-        public Customer(string id, string name, string email, IEnumerable<IOrder> orders)
+        public Customer(string id, string name, string email)
         {
-            Orders = orders;
             Email = email;
             Name = name;
             Id = id;

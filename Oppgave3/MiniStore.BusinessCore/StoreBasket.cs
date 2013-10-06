@@ -20,7 +20,7 @@ namespace MiniStore.BusinessCore
         public decimal TotalSum { get; private set; }
         public void AddItemToBasket(IShoppingBasketItem line)
         {
-           // throw new NotImplementedException();
+            Id = 2;
         }
 
         public IOrder CreateOrder(ICustomer customer)

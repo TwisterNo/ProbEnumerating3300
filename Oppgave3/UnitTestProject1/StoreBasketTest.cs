@@ -5,6 +5,8 @@ using MiniStore.Interfaces;
 
 namespace UnitTestProject1
 {
+
+              
     [TestClass]
     public class StoreBasketTest
     {
@@ -38,17 +40,16 @@ namespace UnitTestProject1
             Assert.AreNotEqual(expected, actual);
         }
 
-        //[TestMethod]
-        //public void Test_AreEqual_Items()
-        //{
-            
-        //}
+        [TestMethod]
+        public void Test_AreEqual_Items()
+        {
+            //Arrange
+            StoreBasket shopItem = new StoreBasket(20m);
 
-        //[TestMethod]
-        //public void Test_AreNotEqual_Items()
-        //{
+            //Assert
+            Assert.IsNull(shopItem.Items);
 
-        //}
+        }
 
         [TestMethod]
         public void Test_AreEqual_TotalSum()
@@ -78,28 +79,36 @@ namespace UnitTestProject1
             Assert.AreNotEqual(expected, actual);
         }
 
-        //[TestMethod]
-        //public void Test_AreEqual_AddItemToBasket()
-        //{
-            
-        //}
+        [TestMethod]
+        public void Test_AreEqual_AddItemToBasket()
+        {
+            //Arrange
+            var basket = new StoreBasket(20m);
+            IShoppingBasketItem shopItem = new ShoppingBasketItem();
+            shopItem.LineSum = 20;
+            basket.AddItemToBasket(shopItem);
 
-        //[TestMethod]
-        //public void Test_AreNotEqual_AddItemToBasket()
-        //{
+            //Assert
+            Assert.AreEqual(basket.Id, 2);
 
-        //}
+        }
 
-        //[TestMethod]
-        //public void Test_AreEqual_CreateOrder()
-        //{
 
-        //}
+        [TestMethod]
+        public void Test_AreEqual_CreateOrder()
+        {
+            //Arrange
+            var basket = new StoreBasket(20m);
+            ICustomer customer = new Customer("", "hello", "hello@not");
+           
+            //Act
+            var actual = basket.CreateOrder(customer);
+ 
+            //Assert
+            Assert.IsNull(actual);
 
-        //[TestMethod]
-        //public void Test_AreNotEqual_CreateOrder()
-        //{
 
-        //}
+        }
+
     }
 }

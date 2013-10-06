@@ -38,17 +38,18 @@ namespace UnitTestProject1
             Assert.AreNotEqual(expected, actual);
         }
 
-        //[TestMethod]
-        //public void Test_AreEqual_Product()
-        //{
-            
-        //}
+        [TestMethod]
+        public void Test_AreEqual_Product()
+        {
+            //Arange
+            var ShopBasket = new ShoppingBasketItem();
+            ShopBasket.Product = null;
 
-        //[TestMethod]
-        //public void Test_AreNotEqual_Product()
-        //{
+            //Assert
+            Assert.IsNull(ShopBasket.Product);
+  
 
-        //}
+        }
 
         [TestMethod]
         public void Test_AreEqual_Quantity()
@@ -110,30 +111,20 @@ namespace UnitTestProject1
             Assert.AreNotEqual(expected, actual);
         }
 
-        //[TestMethod]
-        //public void Test_AreEqual_InBasket()
-        //{
-        //    //Arrange
-        //    IShoppingBasketItem item = new ShoppingBasketItem();
+        [TestMethod]
+        public void Test_AreEqual_InBasket()
+        {
+            //Arrang
+            var shopBasket = new ShoppingBasketItem();
+            shopBasket.InBasket = null;
 
-        //    //Act 
-           
+            //Act
+            var actual = shopBasket.InBasket;
 
-        //    //Assert
-           
-        //}
+            //Assert
+            Assert.IsNull(actual);
 
-        //[TestMethod]
-        //public void Test_AreNotEqual_InBasket()
-        //{
-        //    //Arrange
-            
+        }
 
-        //    //Act
-
-
-        //    //Assert
-
-        //}
     }
 }
